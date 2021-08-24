@@ -1,12 +1,12 @@
 from pytube import YouTube
 
-yt = YouTube(input("Informe o link do video:"))
+youtube = YouTube(input("Informe o link do video:"))
 diretorio = input("Informe o diretorio:  ")
  
-print(f"Titulo: {yt.title}.")
-print(f"Duração: {yt.length} seconds.")
+print(f"Titulo: {youtube.title}.")
+print(f"Duração: {youtube.length} segundos.")
 
-diret= yt.streams.get_highest_resolution() 
+diret= youtube.streams.get_highest_resolution() 
 print("Baixando!")
 diret.download(diretorio)
 print("Download completo")
