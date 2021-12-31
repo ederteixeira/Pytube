@@ -1,12 +1,16 @@
 from pytube import YouTube
 from tkinter import *
 
+
 def download():
-    youtube = YouTube(textLink.get())
-    diretorio = textDir.get()
-    diret= youtube.streams.get_highest_resolution() 
-    diret.download(diretorio)
-    status["text"] = 'Download completo!'
+    try:
+        youtube= YouTube(textLink.get())
+        diretorio= textDir.get()
+        diret= youtube.streams.get_highest_resolution() 
+        diret.download(diretorio)
+        status["text"] = 'Download completo!'
+    except:
+        status["text"] = 'Link não disponível!'
 
 app = Tk()
 app.title("YoutubeDown")
