@@ -8,8 +8,11 @@ Programa para baixar vídeos do Youtube.
 
 Utilizado a biblioteca Pytube.
 
-Instalação: 
+Instalação do pytube: 
     $ pip3 install pytube
+    
+Instalação do Tkinter
+    $ sudo apt-get install python-tk
 
 Utilizado o Tkinter para geração da GUI.
 
