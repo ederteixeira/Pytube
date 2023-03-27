@@ -1,26 +1,3 @@
-### Pytube
-
-#### Descrição
-
-Programa para baixar vídeos do Youtube.
-
-##### Ferramentas
-
-Utilizado a biblioteca Pytube.
-
-Instalação do pytube: 
-    $ pip3 install pytube
-    
-Instalação do Tkinter
-    $ sudo apt-get install python-tk
-
-Utilizado o Tkinter para geração da GUI.
-
-Documentação oficial:
-
-    https://pytube.io/en/latest/
-
-
 Programa em Python para download de vídeos do YouTube, que utiliza a biblioteca Pytube para fazer as conexões e obter as informações necessárias. 
 Além disso foi adicionado uma interface gráfica do usuário (GUI), criada com o auxílio da biblioteca Tkinter.
 
